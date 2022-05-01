@@ -1,0 +1,172 @@
+####
+POST  http://localhost:8000/products/post_review/1
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDE1NjIzMiwiZXhwIjoxNjQwMTU5ODMyfQ.FhvZBYWYwMXHpxGPHw_SrR1VGm4lAIp2wNJQNV0W9NE
+Content-Type: application/json
+
+{
+   "title":"hey",
+   "body":"this is a body",
+   "rating":123
+}
+
+
+
+
+#####
+GET http://localhost:8000/customer/all_customers
+
+
+
+#####
+GET http://localhost:8000/products
+
+#####
+GET http://localhost:8000/customer/sendEmail
+
+
+
+
+###Total Order Amounts
+GET http://localhost:8000/orders/total_amount
+###Total Orders Placed
+
+
+GET http://localhost:8000/orders/total_orders_placed
+
+####
+GET http://localhost:8000/products/search?query_string=galaxy
+
+
+
+####
+POST http://localhost:8000/admin/register
+Content-Type: application/json
+
+{
+   "name":"john doe",
+   "email":"john@gmail.com",
+   "password":"john123@"
+}
+
+####
+POST http://localhost:8000/admin/login
+Content-Type: application/json
+
+{
+   
+   "email":"john@gmail.com",
+   "password":"john123@"
+}
+
+
+### 
+GET http://localhost:8000/admin
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiam9obiBkb2UiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwicHJvZmlsZV9waWMiOm51bGwsImFkbWluX2lkIjoxNSwiaWF0IjoxNjM5MzY5MjQ0LCJleHAiOjE2MzkzNzI4NDR9.UyTCroG441AiYR7ILTg_8qSBcW6UfN6KbeBYziQLM-o
+
+
+
+
+####
+POST  http://localhost:8000/paypal/singleCheckout
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTYzOTQxNjA2MywiZXhwIjoxNjM5NDE5NjYzfQ.bgFK7_5q7XAs43iLERlARtA1GqUPRCKmKltJ-RgXzIo
+
+
+
+#####
+GET http://localhost:8000/products
+
+
+
+#####
+POST http://localhost:8000/products/question/1
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDAyMDU0NywiZXhwIjoxNjQwMDI0MTQ3fQ.mjvLnySv8BU5G3j8hdz0F4Q0LKoNn9cehzkNuVDm9FA
+Content-Type: application/json
+
+{
+   "question":"hello i am ANSH"
+}
+
+
+#####
+POST http://localhost:8000/products/answer/2
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDAyMDU0NywiZXhwIjoxNjQwMDI0MTQ3fQ.mjvLnySv8BU5G3j8hdz0F4Q0LKoNn9cehzkNuVDm9FA
+Content-Type: application/json
+
+
+
+{
+   "answer":"this is a answer FOR ANSH"
+}
+
+###
+GET  http://localhost:8000/products/question/1
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDAyMDU0NywiZXhwIjoxNjQwMDI0MTQ3fQ.mjvLnySv8BU5G3j8hdz0F4Q0LKoNn9cehzkNuVDm9FA
+
+
+###
+GET  http://localhost:8000/products/sample
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDAxODIwOSwiZXhwIjoxNjQwMDIxODA5fQ.
+
+
+
+####
+POST  http://localhost:8000/products/post_review/1
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6MSwibmFtZSI6Ik1BTkFTIFJBVEhPUkUiLCJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaWJCSlZ0Q1ZBSjM4cXJzUjFJU1FyX2JobDRBRmI4VFZYaUNaT0tDQT1zOTYtYyIsImlhdCI6MTY0MDE1NjIzMiwiZXhwIjoxNjQwMTU5ODMyfQ.FhvZBYWYwMXHpxGPHw_SrR1VGm4lAIp2wNJQNV0W9NE
+Content-Type: application/json
+
+{
+   "title":"hey",
+   "body":"this is a body",
+   "rating":123
+}
+
+
+
+####
+GET  http://localhost:8000/admin/sub_admin
+user-key:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFzcmF0aG9yZTIzNDJAZ21haWwuY29tIiwicHJvZmlsZV9waWMiOm51bGwsImxhc3ROYW1lIjoiUkFUSE9SRSIsImZpcnN0TmFtZSI6Ik1BTkFTIiwiYWRtaW5faWQiOjcsImlhdCI6MTY0MTA1NDg1OSwiZXhwIjoxNjQxMDU4NDU5fQ.UA7gC8J6GDa6inaBhXwT6TxfHmRkjMWSYxYy7hwG_vg
+
+#####
+GET  http://localhost:8000/products/filter?rams=[]&storages=["32 GB"]&pricerange=[]
+
+
+
+####
+GET  http://localhost:8000/products/filter?ram=["6 GB"]
+
+
+
+
+####
+
+GET  http://localhost:8000/products/searchlinks?query_string=google
+
+
+####
+POST http://localhost:8000/brand/create
+Content-Type: application/json
+
+{
+"brand_name":"samsung",
+"brand_image":"thi is image"
+}
+
+####
+GET http://localhost:8000/brand/all
+
+
+
+####
+DELETE  http://localhost:8000/blogs/delete/2
+
+
+###
+PUT http://localhost:8000/blogs/update/2
+
+Content-Type: application/json
+{
+   "title":"iphone",
+   "description":"description is iphone",
+   "markdown":"markdown",
+   "img":"hello"
+}
